@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Allen Peng Personal Portfolio" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav>
+        <div class="title-button">
+          <h1>Allen Peng Portfolio</h1>
+        </div>
+        <div class="nav-controls">
+          <button id="toggle">Toggle Dark Mode</button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="fun.html">Fun!</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="centered-section">
+        <h2>Projects</h2>
+
+        <article>
+          <h3>Premier League Match Predictor(Go Brighton)</h3>
+          <p>
+            A data pipeline project that predicts English Premier League match
+            outcomes. I scraped over 10 seasons of data using Selenium and
+            BeautifulSoup and cleaned and processed it with pandas. I engineered
+            features such as rolling_averages and categorical encodings, and
+            trained a Random Forest classifier in scikit-learn with 52%
+            precision.
+          </p>
+        </article>
+
+        <article>
+          <h3>VR Computer Vision Pipeline</h3>
+          <p>
+            Built in Python with a pretrained Yolov7 model for object detection.
+            I wrote scripts to parse the bounding box outputs and tracked the
+            horizontal movement of a target object across frames to estimate
+            distance, with the assumption that larger shifts in position implied
+            closer proximity.
+          </p>
+        </article>
+
+        <article>
+          <h3>BruinClassPals</h3>
+          <p>
+            A full-stack React app that helps UCLA students find classmates in
+            their classes. Built with MongoDB, Node.js, and Tailwind. Includes
+            search filters, friends list, and login state management.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

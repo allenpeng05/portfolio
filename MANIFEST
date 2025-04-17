@@ -1,0 +1,54 @@
+ALL students complete this section:
+
+CHOICES
+(You are allowed to choose a feature for some of the requirements. Indicate on the line
+which one you chose using the letter provided in the spec. Separate the letters with a comma
+In some cases you will also need to tell us what you did)
+
+---
+
+-9a.Used text-shadow on .title-button h1 to give the site title a glowing effect and visual depth
+-9b. Used clamp() to scale headings (h1, h2, h3) responsively across different screen sizes 12. b (Used ::marker with 🎵 emoji and custom color in innermost unordered music list)
+-12. b,d: Styled the innermost music list with ::marker and used transform: scale(1.05) on .grid-item:hover to apply CSS transforms for visual hover effects
+-18. b Used ::before and ::after pseudo-elements on #music h2 and #snowboard h2 to decorate section titles with inline emojis. This demonstrates advanced inline text styling with pseudo-elements.
+-19. Duplicate One
+JAVASCRIPT
+(Please tells us what the JavaScript does e.g. "click on the green button and it does the following...")
+
+---
+
+The JavaScript toggles a dark-mode class on the <body> element when the "Toggle Dark Mode" button is clicked, switching between light and dark themes.
+
+NOTES TO STAFF
+(If there is anything you need to tell us, please use the section below)
+
+## Although it was fully valid HTML without errors, it was complaining that I had a trailing slash on void elements, because prettier autoformats like that.
+
+ONLY modify this section if you implemented the requirements across 2 or more files.
+Otherwise, submit this file as is. PLEASE do not delete anything from this file.
+
+REQUIREMENT LOCATION
+(After the period, hit TAB and then enter the HTML page name where the requirement
+was implemented)
+
+---
+
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20. index.html(navbar links), fun.html(youtube link with visited css)

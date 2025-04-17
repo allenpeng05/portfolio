@@ -1,0 +1,274 @@
+/* Global Styling */
+
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Nav Bar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.title-button {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #00bcd4;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+/* Header Styling */
+.title-button h1 {
+  font-family: "Inconsolata", monospace;
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 5px whitesmoke;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+h3 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+/* Section Styling */
+.centered-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Music Styling */
+#music ul li::marker {
+  content: "🎵 ";
+  font-size: 1rem;
+  color: #00bcd4;
+  text-align: left;
+}
+.genre-label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+.genre-label + ul {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.music-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.music-list {
+  flex: 2;
+  min-width: 300px;
+}
+
+.concert-image {
+  flex: 1.75;
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.concert-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 700px) {
+  .concert-image {
+    display: none;
+  }
+}
+
+#music h2::before {
+  content: "🎸 ";
+  font-size: 1.2rem;
+  color: #f06292;
+}
+
+#music h2::after {
+  content: " 🎸";
+  font-size: 1.2rem;
+  color: #f06292;
+}
+
+.external-link {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.external-link:visited {
+  color: purple;
+}
+
+.external-link:hover {
+  color: #11525b;
+  text-decoration: underline;
+}
+
+/* Snowboard Styling */
+.snow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 600px) {
+  .snow-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .span-2 {
+    grid-column: auto;
+  }
+}
+
+.grid-item img:hover {
+  transform: scale(1.03);
+}
+
+img[src*=".jpg"],
+img[src*=".jpeg"] {
+  border: 3px solid forestgreen;
+}
+
+#snowboard h2::before {
+  content: "❄️ ";
+  font-size: 1.2rem;
+  color: #3f51b5;
+}
+
+#snowboard h2::after {
+  content: " ❄️";
+  font-size: 1.2rem;
+  color: #3f51b5;
+}
+
+/* Contact Me Stylinf */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+fieldset {
+  border: 2px solid #00bcd4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-family: "Inconsolata", monospace;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e555c;
+}
